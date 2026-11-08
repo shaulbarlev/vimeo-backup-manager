@@ -1,0 +1,48 @@
+{
+  "total": 3,
+  "page": 1,
+  "per_page": 2,
+  "paging": {
+    "next": "/me/videos?page=2&per_page=2&fields=uri,name",
+    "previous": null,
+    "first": "/me/videos?page=1&per_page=2",
+    "last": "/me/videos?page=2&per_page=2"
+  },
+  "data": [
+    {
+      "uri": "/videos/1000000001",
+      "name": "sample clip 1",
+      "description": "First clip",
+      "link": "https://vimeo.com/1000000001/a1b2c3d4e5",
+      "player_embed_url": "https://player.vimeo.com/video/1000000001?h=a1b2c3d4e5",
+      "duration": 28,
+      "width": 1080,
+      "height": 1920,
+      "modified_time": "2026-11-04T14:15:48+00:00",
+      "privacy": {
+        "view": "unlisted",
+        "download": true
+      },
+      "parent_folder": {
+        "uri": "/users/1234567/projects/500001"
+      }
+    },
+    {
+      "uri": "/videos/1000000002",
+      "name": "Nike: spot/v2",
+      "description": null,
+      "link": "https://vimeo.com/1000000002/abcdef1234",
+      "player_embed_url": "https://player.vimeo.com/video/1000000002?h=abcdef1234",
+      "duration": 61,
+      "width": 1920,
+      "height": 1080,
+      "modified_time": "2026-10-01T08:00:00+00:00",
+      "privacy": {
+        "view": "anybody",
+        "download": false
+      },
+      "parent_folder": null,
+      "password": "should-not-be-stored"
+    }
+  ]
+}

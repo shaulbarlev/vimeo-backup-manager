@@ -1,0 +1,45 @@
+{
+  "total": 3,
+  "page": 1,
+  "per_page": 100,
+  "paging": {
+    "next": null,
+    "previous": null,
+    "first": "/me/projects?page=1&per_page=100",
+    "last": "/me/projects?page=1&per_page=100"
+  },
+  "data": [
+    {
+      "name": "360",
+      "uri": "/users/1234567/projects/500001",
+      "metadata": {
+        "connections": {
+          "ancestor_path": []
+        }
+      }
+    },
+    {
+      "name": "sub",
+      "uri": "/users/1234567/projects/500002",
+      "metadata": {
+        "connections": {
+          "ancestor_path": [
+            {
+              "name": "360",
+              "uri": "/users/1234567/projects/500001"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "commercials",
+      "uri": "/users/1234567/projects/500003",
+      "metadata": {
+        "connections": {
+          "ancestor_path": []
+        }
+      }
+    }
+  ]
+}

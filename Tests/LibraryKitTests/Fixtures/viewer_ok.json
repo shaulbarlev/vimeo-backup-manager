@@ -1,0 +1,8 @@
+{
+  "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjk5OTk5OTk5OTl9.fixture-signature",
+  "exp": 9999999999,
+  "user": {
+    "name": "Fixture User",
+    "uri": "/users/1234567"
+  }
+}

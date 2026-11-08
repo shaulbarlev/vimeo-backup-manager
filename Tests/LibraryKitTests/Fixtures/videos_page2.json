@@ -1,0 +1,32 @@
+{
+  "total": 3,
+  "page": 2,
+  "per_page": 2,
+  "paging": {
+    "next": null,
+    "previous": "/me/videos?page=1&per_page=2&fields=uri,name",
+    "first": "/me/videos?page=1&per_page=2",
+    "last": "/me/videos?page=2&per_page=2"
+  },
+  "data": [
+    {
+      "uri": "/videos/900000001",
+      "name": "password clip",
+      "description": "Protected",
+      "link": "https://vimeo.com/900000001/9f8e7d6c5b",
+      "player_embed_url": "https://player.vimeo.com/video/900000001?h=9f8e7d6c5b",
+      "duration": 120,
+      "width": 1280,
+      "height": 720,
+      "modified_time": "2026-09-15T10:30:00+00:00",
+      "privacy": {
+        "view": "password",
+        "download": false
+      },
+      "parent_folder": {
+        "uri": "/users/1234567/projects/500002"
+      },
+      "password": "hunter2"
+    }
+  ]
+}
