@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logo.png" alt="Vimeo Backup" width="480"></p>
+<p align="center"><img src="assets/wordmark.png" alt="Vimeo Backup" width="480"></p>
 <p align="center">Keep a copy of your whole Vimeo library on your Mac.</p>
 
 Vimeo Backup is a Mac app that copies your Vimeo library to a folder on your Mac or an external drive. You sign in with your Vimeo account, pick a folder, and choose what to download: whole folders, a range of upload dates, or single videos, either as the original file or at a smaller size. Your Vimeo folders show up as folders on disk, and the main window tells you how much of the library you have and at what quality.
