@@ -33,17 +33,6 @@ with tempfile.TemporaryDirectory() as tmp:
             icon.resize((px, px), Image.LANCZOS).save(iconset / name)
     subprocess.run(["iconutil", "-c", "icns", str(iconset), "-o", str(root / "AppIcon.icns")], check=True)
 
-# README logo: the black background becomes transparency (alpha from brightness), letters keep their fill colour.
-px = src.load()
-fill = max((px[x, y] for x in range(0, src.width, 7) for y in range(0, src.height, 7)), key=sum)
-lum = src.convert("L")
-peak = lum.getextrema()[1]
-alpha = lum.point(lambda v: min(255, round(v * 255 / peak)))
-logo = Image.new("RGBA", src.size, fill + (0,))
-logo.putalpha(alpha)
-logo = logo.crop(alpha.getbbox())
-pad = 24
-padded = Image.new("RGBA", (logo.width + 2 * pad, logo.height + 2 * pad), fill + (0,))
-padded.paste(logo, (pad, pad))
-padded.resize((1200, round(padded.height * 1200 / padded.width)), Image.LANCZOS).save(root / "logo.png", optimize=True)
+logo = src.resize((1200, round(src.height * 1200 / src.width)), Image.LANCZOS)
+logo.save(root / "logo.png", optimize=True)
 print("wrote", *(p.name for p in sorted(root.iterdir())))
